@@ -87,3 +87,14 @@ points(x = file[, 1], y = file[, 2], type = "s", xlab = "Amount of indexes", yla
 
     legend(1, 5470, legend = c("Ceil x^2", "Floor x^2", "Czech"), col = c("red", "green", "blue"), lty = 1:2, cex = 0.8)
 }
+
+alg6 <- function() {
+    setwd("E:/GitHubRepo/Hashing/")
+    file <- read.csv("czech2.csv")
+    plot(y = file[, 1], x = file[, 2], type = "s", xlab = "Indeksy w tablicy", ylab = "Ilosc wystapien", col = "blue")
+
+    file2 <- read.csv("czech2standard.csv")
+    points(y = file2[, 1], x = file2[, 2], type = "s", xlab = "Indeksy w tablicy", ylab = "Ilosc wystapien", col = "red")
+
+
+}
